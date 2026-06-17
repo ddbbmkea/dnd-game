@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Crimson+Pro:ital,wght@0,400;0,500;1,400&display=swap');
+
+:root {
+  --text: #c4b8a8;
+  --text-bright: #e8dcc8;
+  --text-muted: #7a6f62;
+  --bg: #0a080d;
+  --bg-glow: #15101c;
+  --panel-bg: #141018;
+  --panel-bg-deep: #0e0b12;
+  --border: #3a2f42;
+  --accent: #8b3a3a;
+  --accent-border: #a84a4a;
+  --gold: #c9a227;
+
+  --sans: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+  --heading: 'Cinzel', 'Times New Roman', serif;
+
+  font: 18px/145% var(--sans);
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background:
+    radial-gradient(ellipse at top, rgba(139, 58, 58, 0.08) 0%, transparent 55%),
+    radial-gradient(ellipse at bottom, rgba(58, 47, 66, 0.2) 0%, transparent 50%),
+    linear-gradient(180deg, var(--bg-glow) 0%, var(--bg) 100%);
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-bright);
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+}
